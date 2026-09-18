@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/jpeg" href="images/logo.png">
+  <link rel="stylesheet" href="./styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael's Fresh Pasta</title>
+</head>
+<body>
+  <header>
+    <h1>South East Melbourne Fresh Pasta</h1>
+    <p class="tagline">Handmade fresh pasta, made per order</p>
+  </header>
+
+  <main>
+    <div class="notice">
+      <strong>Ordering &amp; Pick-up Requirements:</strong>
+      <ul>
+        <li><strong>Ordering:</strong> Orders are taken throughout the week — so simply submit your order whenever suits you. <strong>Deadline for end of week orders is Thursday</strong></li>
+        <li><strong>Location:</strong> All orders must be collected in person from Clayton South. I will send address confirmation through text after your order has been placed.</li>
+        <li><strong>Collection:</strong> Pick-up is <strong>Saturday mornings only, between 9am and 1pm</strong>. Please plan to collect your order within that window.</li>
+        <li><strong>Payment:</strong> Cash only at pick-up (no cards or online payment).</li>
+      </ul>
+    </div>
+
+    <div class="why-choose">
+      <h2 class="section-title">Why Choose Fresh Pasta?</h2>
+      <p>This pasta is as simple and as fresh as it gets. I don't use supermarket eggs or add any unnecessary ingredients. I make the orders on Friday so they'll have the longest possible shelf-life. You could probably just make it from home but I make them as cheap as possible so you don't have to.</p>
+    </div>
+
+    <h2 class="section-title">Choose Your Pasta</h2>
+
+    <div class="pasta-list">
+      <div class="pasta-row" data-pasta="Spaghetti" data-price="4">
+        <img src="images/spaghetti.jpg" alt="hand made fresh spaghetti">
+        <div class="pasta-details">
+          <h3>Spaghetti</h3>
+          <p class="price">$4.00</p>
+          <p class="weight">per 300g</p>
+        </div>
+        <div class="quantity-control">
+          <button type="button" class="decrease">−</button>
+          <span class="qty">0</span>
+          <button type="button" class="increase">+</button>
+        </div>
+      </div>
+
+      <div class="pasta-row" data-pasta="Udon" data-price="4">
+        <img src="images/udon.PNG" alt="Udon noodles">
+        <div class="pasta-details">
+          <h3>Udon</h3>
+          <p class="price">$4.00</p>
+          <p class="weight">per 300g</p>
+        </div>
+        <div class="quantity-control">
+          <button type="button" class="decrease">−</button>
+          <span class="qty">0</span>
+          <button type="button" class="increase">+</button>
+        </div>
+      </div>
+
+      <div class="pasta-row" data-pasta="Fettuccine" data-price="4">
+        <img src="images/fettucine.PNG" alt="Fettuccine">
+        <div class="pasta-details">
+          <h3>Fettuccine</h3>
+          <p class="price">$4.00</p>
+          <p class="weight">per 300g</p>
+        </div>
+        <div class="quantity-control">
+          <button type="button" class="decrease">−</button>
+          <span class="qty">0</span>
+          <button type="button" class="increase">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="order-summary">
+      <h3>Your Order</h3>
+      <ul id="summary-list">
+        <li id="summary-empty">No items selected yet.</li>
+      </ul>
+      <p class="order-total" id="order-total"></p>
+    </div>
+
+    <section class="order-section">
+      <h2>Comments &amp; Submit</h2>
+      <form id="order-form">
+        <label for="phone">Your Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="04XX XXX XXX" required>
+
+        <label for="comments">Additional Comments</label>
+        <textarea id="comments" name="comments" placeholder="Any special requests, etc."></textarea>
+
+        <button type="submit" class="submit-btn" id="submit-btn">Submit Order</button>
+      </form>
+      <div id="form-status" style="margin-top: 15px; text-align: center; font-weight: bold;"></div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 South East Melbourne Fresh Pasta. All rights reserved.
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

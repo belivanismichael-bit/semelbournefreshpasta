@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #faf6f0;
+  color: #2e2620;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #7a2e2e;
+  color: #fdf1e0;
+  text-align: center;
+  padding: 40px 20px 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+header p.tagline {
+  margin-top: 8px;
+  font-style: italic;
+  color: #f2d9c2;
+}
+
+.notice {
+  max-width: 700px;
+  margin: 25px auto;
+  background-color: #fff3e0;
+  border: 1px solid #d9a760;
+  border-left: 6px solid #b5651d;
+  padding: 18px 22px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.notice strong {
+  color: #7a2e2e;
+}
+
+.notice ul {
+  margin-top: 8px;
+  padding-left: 20px;
+}
+
+.notice li {
+  margin-bottom: 4px;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.why-choose {
+  max-width: 700px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.why-choose p {
+  font-size: 1rem;
+  color: #4a3f36;
+}
+
+h2.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 30px 0 20px;
+  color: #7a2e2e;
+}
+
+.pasta-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pasta-row {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 14px 18px;
+  gap: 18px;
+}
+
+.pasta-row img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  background-color: #eee;
+}
+
+.pasta-details {
+  flex-grow: 1;
+}
+
+.pasta-details h3 {
+  font-size: 1.15rem;
+  color: #2e2620;
+  margin-bottom: 4px;
+}
+
+.pasta-details .price {
+  font-weight: bold;
+  color: #b5651d;
+  font-size: 1rem;
+}
+
+.pasta-details .weight {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.quantity-control button {
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 6px;
+  background-color: #7a2e2e;
+  color: #fdf1e0;
+  font-size: 1.2rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.quantity-control button:hover {
+  background-color: #5f2323;
+}
+
+.quantity-control span {
+  min-width: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.order-summary {
+  max-width: 700px;
+  margin: 40px auto 0;
+  background-color: #fff3e0;
+  border: 1px solid #d9a760;
+  border-radius: 8px;
+  padding: 18px 22px;
+  font-size: 0.95rem;
+}
+
+.order-summary h3 {
+  color: #7a2e2e;
+  margin-bottom: 8px;
+}
+
+#summary-list {
+  list-style: none;
+  padding: 0;
+}
+
+#summary-list li {
+  padding: 4px 0;
+  border-bottom: 1px dashed #d9a760;
+}
+
+#summary-list li:last-child {
+  border-bottom: none;
+}
+
+#summary-empty {
+  color: #999;
+  font-style: italic;
+}
+
+.order-total {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: right;
+  color: #7a2e2e;
+}
+
+.order-section {
+  max-width: 700px;
+  margin: 30px auto 20px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.order-section h2 {
+  text-align: center;
+  color: #7a2e2e;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  margin-top: 16px;
+}
+
+form input[type="tel"],
+form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form button.submit-btn {
+  margin-top: 22px;
+  width: 100%;
+  padding: 12px;
+  background-color: #7a2e2e;
+  color: #fdf1e0;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+form button.submit-btn:hover {
+  background-color: #5f2323;
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+  margin-top: 40px;
+  background-color: #2e2620;
+  color: #f2d9c2;
+  font-size: 0.85rem;
+}
